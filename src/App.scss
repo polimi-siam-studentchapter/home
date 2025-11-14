@@ -19,6 +19,16 @@
       color: $font-light-color;
     }
 
+    .registration-section {
+      a {
+        color: $font-light-color;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+          color: $blue_polimi2;
+      }
+    }
+
     .container h3 { color: $blue_polimi25; }
     h3 { color: $font-light-color; }
     h2 { color: $font-light-color; }
@@ -40,14 +50,14 @@
     }
 
     .timeline-section {
-      background-color: $background-light-color-transparent2;
+      background: linear-gradient(45deg, #fbfbfb45, #fbfbfba6);
       .MuiTimelineContent-root {
         .MuiTypography-subtitle1 { color: $font-light-color-2; }
       }
     }
 
     .map-container {
-      background-color: $background-light-color-transparent2;
+      background: linear-gradient(45deg, #fbfbfb45, #fbfbfba6);
 
       .map-toggle-group {
         .MuiToggleButton-root {
@@ -113,6 +123,22 @@
     color: $font-dark-color;
     a {
       color: $font-dark-color;
+    }
+
+    .organisers {
+      h2, h3 {
+        color: $font-light-color;
+      }
+    }
+
+    .registration-section {
+      a {
+        color: $font-light-color;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+          color: $blue_polimi2;
+      }
     }
 
     .container h3 { color: $font-dark-color-2; }

@@ -26,10 +26,10 @@ const ScrollTopDiv: React.FC<ScrollTopDivProps> = ({ height = 60 }) => {
       className="scroll-top-div" // global SCSS class
       style={{ top: `${top}px`, height: `${height}px` }} // dynamic top
     >
-      <a href="#home">Home</a>
       <a href="#registration">Registration</a>
-      <a href="#schedule">Programme</a>
+      <a href="#schedule">Schedule</a>
       <a href="#speakers">Speakers</a>
+      <a href="#organisers">Organisers</a>
     </div>
   );
 };

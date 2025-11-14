@@ -139,6 +139,7 @@
   backdrop-filter: blur(10px);
   padding-top: 1em;
   margin-bottom: 3em;
+  font-size: 1.25em !important;
 
   .MuiTimelineItem-root {
     &:before {
@@ -158,12 +159,15 @@
       margin-bottom: 0.3em; // optional spacing between event and date
     }
   }
+  .date {
+    font-weight: 600;
+  }
 }
 
 
 // -------------------- Registration Section --------------------
 .registration-section {
-  padding: 4em $margin-right-body 0em $margin-left-body;
+  padding: 4em $margin-right-body 4em $margin-left-body;
   width: $body-width;
   background-color: $background-light-color;
   align-items: left;
@@ -235,6 +239,12 @@
   }
 }
 
+.list {
+  li {
+    margin-bottom: 0.3em;
+  }
+}
+
 // -------------------- Logo Section --------------------
 .logo-section {
   padding: 4em $margin-right-body 4em $margin-left-body;
@@ -260,6 +270,7 @@
   h2 {
     margin-bottom: 0.5rem;
     font-family: inherit;
+    padding-bottom: 1em;
   }
 
   p {
@@ -276,6 +287,7 @@
     backdrop-filter: blur(10px);
     border-radius: $border-radius;
     background: linear-gradient(75deg, #eeeeee00, #cccccc38);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: inherit;
 
     .MuiAccordionSummary-root {
@@ -346,6 +358,13 @@
   }
 }
 
+
+// ------------------- download-button ------------------
+.download-button{
+  position: absolute;
+  padding: 1em 1em 1em 0em;
+}
+
 // ---------------------- Speakers ----------------------
 .speakers-section {
   padding: 4em 2em;
@@ -366,11 +385,12 @@
   h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
+    padding-top: 1em;
   }
 
   .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 2rem;
     width: 100%;
     max-width: 1200px;
@@ -407,7 +427,7 @@
         font-size: 1.2rem;
       }
       p {
-        font-size: 0.95rem;
+        font-size: 1rem;
         color: #ccc;
       }
     }
@@ -420,7 +440,7 @@
         font-weight: 600;
       }
       p {
-        font-size: 0.95rem;
+        font-size: 1rem;
         line-height: 1.5;
       }
     }
@@ -448,6 +468,7 @@
 .map-container {
   margin: 0 auto;
   border-radius: $border-radius;
+  margin-top: 2em;
 
   .map-toggle-group {
     margin-top: 0.5em;
@@ -463,6 +484,8 @@
     .map-toggle-left {
       border-top-left-radius: 30px;
       border-bottom-left-radius: 30px;
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
     }
 
     .map-toggle-right {
@@ -475,7 +498,8 @@
     position: relative;
     width: 100%;
     height: 400px;
-    margin-bottom: 2em;
+    min-height: 200px;
+    margin-bottom: 1em;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
     overflow: hidden;
@@ -497,6 +521,78 @@
     }
   }
 }
+
+
+// -------------------- Organisers --------------------
+.organisers {
+  padding: 4em $margin-right-body 4em $margin-left-body;
+  width: $body-width;
+  background-color: $background-light-color;
+  align-items: left;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+
+  .organiser-group {
+    margin-bottom: 2rem;
+
+    h3 {
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  /* ====================================================
+     RESPONSIVE TWO-COLUMN GRID FOR ORGANISERS
+     ==================================================== */
+  .committee-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem 2rem;  // vertical + horizontal spacing
+  }
+
+  .member {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.75rem 1rem;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+  }
+
+  .member-photo {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+
+  .member-info {
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      font-weight: 600;
+      color: var(--text-color, #222);
+    }
+  }
+
+  .affiliation {
+    font-size: 0.9em;
+    color: #555;
+  }
+}
+
 
 // -------------------- Mobile Styles --------------------
 @media (max-width: 600px) {
@@ -566,9 +662,10 @@
     }
   }
 
+
   // ---------- Registration Section ----------
   .registration-section {
-    padding: 2em 1em 0 1em;
+    padding: 2em 1em 2em 1em;
     width: 100%;
     box-sizing: border-box;
 
@@ -612,7 +709,6 @@
   // ---------- Map Container ----------
   .map-container {
     max-width: 100%;
-    margin: 0 auto;
 
     .map-toggle-group {
       .MuiToggleButton-root {
@@ -637,5 +733,11 @@
     .contributed {
       width: $body-width-small;
     }
+  }
+
+  // ---------- Organisers ----------
+  .organisers {
+    padding: 4em $margin-right-body-small 4em $margin-left-body-small;
+    width: $body-width-small;
   }
 }

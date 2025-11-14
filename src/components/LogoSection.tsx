@@ -11,7 +11,7 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
   return (
     <div className="logo-section">
       <h2>Institutions involved</h2>
-      <p>All the institutions involved are bla bla bla.</p>
+      <p>Sponsors and institutions involved.</p>
       <section>
         <LogoLoop
           className="logo-loop"
@@ -21,6 +21,8 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
             { src: "./logos/logo-8192px.png", alt: "AIM" },
             { src: "./logos/matematica_unipi_dx_blu.png", alt: "UniPi" },
             { src: "./logos/SNS.png", alt: "SNS" },
+            { src: "./logos/pavia.png", alt: "Pavia" },
+            { src: "./logos/siamgenova.png", alt: "Genova" },
           ]}
           speed={80}
           direction="left"

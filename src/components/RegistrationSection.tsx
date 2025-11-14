@@ -10,12 +10,24 @@ import Typography from "@mui/material/Typography";
 
 const steps = [
   {
-    label: "Registration form",
-    description: `Registration for the meeting is free but mandatory, please use the form to register. The deadline for registration is December 13, 2025.`,
+    label: "Abstract submission form - December 15, 2025",
+    description:
+    (
+      <>
+        Contributed talks and posters are welcome, use the{" "}
+        <a href="https://forms.gle/uD3a9h3PVXUrXu5K8">form here</a> to submit your abstract.
+      </>
+    ), 
   },
   {
-    label: "Abstract submission form",
-    description: `Contributed talks and posters are welcome, use the form to submit your abstract. The deadline for abstract submission is December 25, 2025. The notification of acceptance will be sent by the 15th of January, 2025.`,
+    label: "Registration form - January 15, 2026",
+    description:
+    (
+      <>
+        Registration for the meeting is free but mandatory, please use the
+        {" "}<a href="https://forms.gle/aRprw93BCwPHHYJj8">form</a> to register.
+      </>
+    ),
   },
   {
     label: "Done!",
@@ -43,8 +55,9 @@ export default function RegistrationSection() {
               </StepLabel>
 
               <StepContent>
-                <Typography>{step.description}</Typography>
-
+                <Typography>
+                  {step.description}
+                </Typography>
                 <Box className="step-buttons">
                   <Button className="continue" onClick={handleNext}>
                     {index === steps.length - 1 ? "Finish" : "Continue"}

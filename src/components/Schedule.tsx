@@ -41,41 +41,40 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
     { time: "", programme: "", speaker: "[JUNIOR 1C]" },
     { time: "", programme: "", speaker: "[JUNIOR 1D]" },
     { time: "11:00-11:30", programme: "Coffee", speaker: "-" },
-    { time: "11:30-12:50", programme: "Session 2", speaker: "[JUNIOR 2A]" },
+    { time: "11:30-13:10", programme: "Session 2", speaker: "[JUNIOR 2A]" },
     { time: "", programme: "", speaker: "[JUNIOR 2B]" },
     { time: "", programme: "", speaker: "[JUNIOR 2C]" },
     { time: "", programme: "", speaker: "[JUNIOR 2D]" },
-    { time: "12:50-14:10", programme: "Lunch", speaker: "-" },
-    { time: "14:10-14:50", programme: "Keynote 2", speaker: "[SENIOR 2]" },
-    { time: "14:50-16:10", programme: "Elevator Pitch", speaker: "-" },
-    { time: "16:10-17:30", programme: "Poster + Aperitif", speaker: "-" },
+    { time: "", programme: "", speaker: "[JUNIOR 2E]" },
+    { time: "13:10-14:30", programme: "Lunch", speaker: "-" },
+    { time: "14:30-15:10", programme: "Keynote 2", speaker: "[SENIOR 2]" },
+    { time: "15:10-16:30", programme: "Elevator Pitch", speaker: "-" },
+    { time: "16:30-18:00", programme: "Poster + Aperitif", speaker: "-" },
   ];
 
   const day2: Session[] = [
     { time: "8:30-9:00", programme: "Opening + Registration", speaker: "-" },
     { time: "9:00-9:40", programme: "Keynote 3", speaker: "[SENIOR 3]" },
-    { time: "9:40-11:00", programme: "Sessione 3 (Tema 3)", speaker: "[JUNIOR 3A]" },
+    { time: "9:40-11:00", programme: "Session 3 (Tema 3)", speaker: "[JUNIOR 3A]" },
     { time: "", programme: "", speaker: "[JUNIOR 3B]" },
     { time: "", programme: "", speaker: "[JUNIOR 3C]" },
     { time: "", programme: "", speaker: "[JUNIOR 3D]" },
     { time: "11:00-11:30", programme: "Coffee", speaker: "-" },
-    { time: "11:30-12:50", programme: "Sessione 4 (Tema 4)", speaker: "[JUNIOR 4A]" },
+    { time: "11:30-12:50", programme: "Session 4 (Tema 4)", speaker: "[JUNIOR 4A]" },
     { time: "", programme: "", speaker: "[JUNIOR 4B]" },
     { time: "", programme: "", speaker: "[JUNIOR 4C]" },
     { time: "", programme: "", speaker: "[JUNIOR 4D]" },
-    { time: "12:50-14:10", programme: "Pranzo", speaker: "-" },
-    { time: "14:10-14:50", programme: "Keynote 4", speaker: "[SENIOR 4]" },
-    { time: "14:50-15:30", programme: "Sessione 5 (Free)", speaker: "[JUNIOR 5A]" },
-    { time: "", programme: "", speaker: "[JUNIOR 5B]" },
-    { time: "15:30-16:00", programme: "Poster + Coffee", speaker: "-" },
-    { time: "16:00-16:40", programme: "Keynote 5", speaker: "[SENIOR 5]" },
-    { time: "16:40-17:00", programme: "Closing", speaker: "-" },
+    { time: "", programme: "", speaker: "[JUNIOR 4E]" },
+    { time: "13:10-14:30", programme: "Lunch", speaker: "-" },
+    { time: "14:30-15:10", programme: "Keynote 4", speaker: "[SENIOR 4]" },
+    { time: "15:10-15:50", programme: "SIAM Chapters", speaker: "-" },
+    { time: "15:50-16:30", programme: "Keynote 5", speaker: "[SENIOR 5]" },
+    { time: "16:30-17:00", programme: "Closing", speaker: "-" },
   ];
 
   return (
     <div className="schedule-section" id="schedule">
-      <h2>Programme</h2>
-      <p>Here you can find the programme of the SIAM chapters meeting.</p>
+      <h2>Schedule</h2>
 
       <Paper elevation={0} className={`schedule-card ${mode === "dark" ? "dark" : ""}`}>
         <Accordion
@@ -84,7 +83,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
           sx={{ background: "transparent", boxShadow: "none" }}
         >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>December 12, 2025</Typography>
+            <Typography>January 29, 2026 - Thursday</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <TableContainer sx={{ overflowX: 'auto' }}>
@@ -116,7 +115,7 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
           sx={{ background: "transparent", boxShadow: "none" }}
         >
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-            <Typography>December 13, 2025</Typography>
+            <Typography>January 30, 2026 - Friday</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <TableContainer sx={{ overflowX: 'auto' }}>
@@ -142,6 +141,15 @@ const Schedule: React.FC<ScheduleProps> = ({ mode }) => {
           </AccordionDetails>
         </Accordion>
       </Paper>
+
+      <a
+        href="./downloadables/programma.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="download-button"
+      >
+        Download Schedule (PDF)
+      </a>
     </div>
   );
 };

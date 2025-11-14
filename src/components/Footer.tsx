@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ mode }) => {
       }}
     >
       <p style={{ margin: 0, fontSize: "0.9em", color: "#fff"}}>
-        © 2026 SIAM Chapters meeting @ PoliMI
+        © 2026 SIAM Chapters Meeting @ PoliMI
       </p>
     </footer>
   );

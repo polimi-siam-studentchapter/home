@@ -22,13 +22,8 @@ function App() {
 
   /* ---------- Load saved or system theme ---------- */
   useEffect(() => {
-    const savedMode = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (savedMode) {
-      setMode(savedMode);
-    } else {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      setMode(mediaQuery.matches ? "dark" : "light");
-    }
+    setMode("dark");
+    localStorage.setItem("theme", "dark");
   }, []);
 
   /* ---------- Theme toggle handler ---------- */
@@ -97,9 +92,9 @@ function App() {
 
         {/* Sections */}
         <Main mode={mode}/>
-        <LogoSection mode={mode} />
         <Schedule mode={mode} />
         <Speakers mode={mode} />
+        <LogoSection mode={mode} />
         <Footer mode={mode} />
       </div>
     </div>

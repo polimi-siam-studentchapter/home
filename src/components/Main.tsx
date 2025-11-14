@@ -37,8 +37,8 @@ function Main({ mode }: MainProps) {
 
   // -------------------- Timeline Data --------------------
   const timelineData = [
-    { date: "December 13, 2025", event: "Abstract submission deadline", icon: <TaskIcon /> },
-    { date: "December 25, 2025", event: "Registration deadline", icon: <HowToRegIcon /> },
+    { date: "December 15, 2025", event: "Abstract submission deadline", icon: <TaskIcon /> },
+    { date: "January 16, 2026", event: "Registration deadline", icon: <HowToRegIcon /> },
     { date: "January 29, 2025", event: "Conference begins", icon: <ChecklistIcon /> },
   ];
 
@@ -46,8 +46,7 @@ function Main({ mode }: MainProps) {
   const [mapIndex, setMapIndex] = useState(0);
 
   const maps = [
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.497285366854!2d9.224761410488375!3d45.47992987765999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f10b463f97%3A0x68f53b5508fb296d!2sAula%20Rogers!5e0!3m2!1sit!2sit!4v1762177079592!5m2!1sit!2sit",
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.492638410096!2d9.225649276188129!3d45.48002347107423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f13e309441%3A0x7b80ebeb99531e2d!2sPoliMi%20%C2%B7%20Edificio%2013%20(Trifoglio)!5e0!3m2!1sit!2sit!4v1762177195378!5m2!1sit!2sit",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d145.15951723069884!2d9.229102492225795!3d45.478172299321386!2m3!1f332.1489971346723!2f55.08258341742861!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x4786c6f13e309441%3A0x7b80ebeb99531e2d!2sPoliMi%20%C2%B7%20Edificio%2013%20(Trifoglio)!5e1!3m2!1sit!2sit!4v1762888892871!5m2!1sit!2sit",
   ];
 
   const handleToggle = (
@@ -59,18 +58,18 @@ function Main({ mode }: MainProps) {
 
   // -------------------- Topics --------------------
   const topics = [
-    "Numerical Linear Algebra",
-    "Mathematical Modeling",
+    "Scientific and Physics-Informed Machine Learning",
+    "High Performance Computing",
     "Inverse Problems",
-    "Large-Scale Problems",
-    "Uncertainty Quantification",
-    "Computational Mechanics",
-    "IsoGeometric Analysis",
+    "Multiscale and Multiphysics Problems",
+    "Mathematical Modeling",
+    "Numerical Analysis",
+    "Data Integration",
     "Finite Element Method",
-    "Finite Volume Method",
-    "Virtual Element Method",
-    "Physics-Informed Machine Learning",
+    "Discontinuous Galerkin Methods",
+    "Mathematics for Sustainable Development",
     "Mathematical Foundations of Deep Learning",
+    "Uncertainty Quantification",
   ];
 
   const theme = useTheme();
@@ -86,8 +85,8 @@ function Main({ mode }: MainProps) {
       <div className="container" id="home" style={{ height: "calc(100vh - 26px)" }}>
         <div className="main-section">
           <div className="title">
-            <h1>SIAM Chapters meeting</h1>
-            <h2>for young researchers in Applied Mathematics and scientific computing (SCAM)</h2>
+            <h1>SIAM Chapters meeting for Young Researchers</h1>
+            <h2>in Applied Mathematics and Scientific Computing</h2>
             <h3>
               <PlaceIcon /> PoliMi, Italy &nbsp;&nbsp;&nbsp;&nbsp;
               <EventAvailableIcon /> January 29-30, 2026
@@ -111,14 +110,20 @@ function Main({ mode }: MainProps) {
       <div ref={nextSectionRef} className="about-section">
         <h2>About the conference</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          The SIAM Chapter Meeting in Applied Mathematics will take place on <strong>29-30 January 2026</strong> at <strong>Politecnico di Milano</strong>, following the success of the first Joint GNCS-SIAM Chapters Meeting for Young Researchers in Numerical Analysis and Applied Mathematics. This event offers an excellent opportunity to foster scientific interaction among young researchers in <strong>applied mathematics, numerical analysis, scientific computing</strong>, and <strong>statistical learning</strong>.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+          The program will include <strong>keynote lectures</strong> by senior researchers, <strong>invited and contributed talks</strong> by young scientists (PhD students and PostDocs), and a <strong>poster session</strong>. This year, the poster session will be complemented by an <strong>elevator pitch format</strong>, where each presenter will give a <strong>three-minute flash talk</strong> to introduce their work and encourage engagement and discussion.
+        </p>
+        <p>
+          Scientific topics will include, but are not limited to: <strong>Numerical Linear Algebra, Mathematical Modelling, Large-Scale Problems, Finite Element and Finite Volume Methods, Statistical Learning, Scientific Machine Learning, High-Performance Computing, Mathematics for Sustainable Development</strong>, and <strong>Computational Medicine</strong>.
+        </p>
+        <p>
+          The meeting is jointly organised by the Italian SIAM Chapters at <strong>Politecnico di Milano, SISSA, Università di Genova, Università di Pavia</strong>, and <strong>Università di Pisa-SNS</strong>. Submissions and participation are warmly encouraged from researchers across <strong>all Italian universities and research centres</strong>.
         </p>
 
         <h3>Included topics</h3>
-        <p>Included topics are, but not limited to</p>
+        <p>Included topics are, but not limited to:</p>
 
         {/* Topics Grid */}
         <Box sx={{ flexGrow: 1, mt: 4, mb: 4 }}>
@@ -203,15 +208,14 @@ function Main({ mode }: MainProps) {
                 </TimelineSeparator>
 
                 <TimelineContent
-                  sx={{ display: "flex", alignItems: "center", fontFamily: "inherit" }}
+                  sx={{ display: "flex", alignItems: "center", fontFamily: "inherit", fontSize: "1.2rem" }}
                 >
-                  <Typography variant="body1" sx={{ fontFamily: "inherit" }}>
+                  <div className="event">
                     {item.event}
-                  </Typography>
-
-                  <Typography variant="subtitle1" sx={{ fontFamily: "inherit", fontWeight: 500 }}>
+                  </div>
+                  <div className="date">
                     {item.date}
-                  </Typography>
+                  </div>
                 </TimelineContent>
               </TimelineItem>
             ))}
@@ -219,9 +223,16 @@ function Main({ mode }: MainProps) {
         </div>
 
         <p>
-          The meeting will take place on February 29-30, 2026, at <a href="https://www.mate.polimi.it/events/HPCSIM24/upload/file/ROGERS.pdf" target="_blank" rel="noopener noreferrer">Aula Rogers</a>, Edificio 11, Politecnico di Milano, Milano, Italy.
+          The meeting will take place on January 29-30, 2026, at <a href="https://aunicalogin.polimi.it/aunicalogin/aunicalogin.jsp?lang=IT&id_servizio=3246&csi=MIA0203&polij_step=0&__pj0=0&__pj1=272230a47c583b74452e43894178f6d8" target="_blank" rel="noopener noreferrer">Aula T.1.2</a>, Edificio 13 (Trifoglio), first floor, Politecnico di Milano, Milano, Italy.
         </p>
 
+        <h3>Venue</h3>
+        <p>
+          The workshop is located near Piola subway station on Metro Line 2 (MM2 Green Line). Upon arrival at Piola station, please proceed to the left exit. Continue on via Francesco d'Ovidio for ~30 metres, then turn left onto the walkway towards Via Ampère. Once arrived at Via Ampère, make a right turn, which will lead you to the Faculty of Architecture entrance on your left. Enter the faculty, take the spiral staircase down on the left. Continue straight ahead through the passage: building 13 is in front of you.
+        </p>
+        <p>  
+          For those arriving by train, the closest station is Milano Lambrate, which is a 15-minute walk away. The average travel time from Milan Central Station is 16 minutes by metro (MM2 Green Line), while the journey from Milan Cadorna takes 22 minutes.
+        </p>
         {/* Map Section */}
         <div className="map-container">
           <ToggleButtonGroup
@@ -232,9 +243,6 @@ function Main({ mode }: MainProps) {
           >
             <ToggleButton value={0} className="map-toggle-left">
               Event location
-            </ToggleButton>
-            <ToggleButton value={1} className="map-toggle-right">
-              Catering
             </ToggleButton>
           </ToggleButtonGroup>
 
@@ -247,8 +255,18 @@ function Main({ mode }: MainProps) {
             ></iframe>
           </div>
         </div>
+        <h3>Accomodation</h3>
         <p>
-          A detailed program can be found <a href="#schedule">here</a>. If you have any question, don't hesitate to contact us at{" "}
+          Some hotels conveniently located near the conference venue are: 
+        </p>
+        <ul className="list">
+          <li><a href="https://21houseofstories.com/milano-citta-studi/">21 House of Stories - Milano Città Studi</a> ***</li>
+          <li><a href="https://hotellombardia.com/it">Hotel Lombardia</a> ****</li>
+          <li><a href="https://hotelgammamilano.it/it">Hotel Gamma</a> ***</li>
+          <li><a href="https://www.hotel-sanfrancisco.it/">Hotel San Francisco</a> ***</li>
+        </ul>
+        <p>
+          If you have any question, don't hesitate to contact us at{" "}
           <a href="mailto:siam-studentchapter-dmat@polimi.it" target="_blank" rel="noopener noreferrer">
             siam-studentchapter-dmat@polimi.it
           </a>.
