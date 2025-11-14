@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://polimi-siam-studentchapter.github.io/sitemap.xml

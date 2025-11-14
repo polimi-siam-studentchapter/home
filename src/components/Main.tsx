@@ -119,7 +119,7 @@ function Main({ mode }: MainProps) {
           Scientific topics will include, but are not limited to: <strong>Numerical Linear Algebra, Mathematical Modelling, Large-Scale Problems, Finite Element and Finite Volume Methods, Statistical Learning, Scientific Machine Learning, High-Performance Computing, Mathematics for Sustainable Development</strong>, and <strong>Computational Medicine</strong>.
         </p>
         <p>
-          The meeting is jointly organised by the Italian SIAM Chapters at <strong>Politecnico di Milano, SISSA, Università di Genova, Università di Pavia</strong>, and <strong>Università di Pisa-SNS</strong>. Submissions and participation are warmly encouraged from researchers across <strong>all Italian universities and research centres</strong>.
+          The meeting is jointly organised by the Italian SIAM Chapters at <strong>Politecnico di Milano (PoliMi), Scuola Internazionale Superiore degli Studi (SISSA), Università di Genova (UniGe), Università di Pavia - IMATI (UniPV-IMATI)</strong>, and <strong>Università di Pisa - Scuola Normale Superiore (UniPi-SNS)</strong>. Submissions and participation are warmly encouraged from researchers across <strong>all Italian universities and research centres</strong>.
         </p>
 
         <h3>Included topics</h3>
