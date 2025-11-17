@@ -1,4 +1,10 @@
 import React from "react";
+
+import ReactMarkdown from "react-markdown";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+import "katex/dist/katex.min.css";
+
 import "../assets/styles/Main.scss";
 
 interface ScheduleProps {
@@ -26,7 +32,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
       img: "./speakers/CeciliaPagliantini.png",
       bio: "RTDb Dipartimento di Matematica, Università di Pisa",
       title: "Dynamical approximation and sensor placement for the state estimation of conservative dynamics",
-      abstract: "This talk focuses on the inverse problem of reconstructing an unknown function $u$ from a finite set of measurements, under the assumption that $u$ is the output of a parametric differential equation with unknown input parameters. Typically, the target function $u$ belongs to an infinite-dimensional Hilbert space and the geometry of the solution set $M$ is not known a priori. One way to reduce the complexity of the problem is to approximate $M$ by a linear, finite dimensional subspace $V$ using model order reduction, and to search for an approximation $u^{\star}\in V$ to the state $u$. It is however known that such an approach becomes ineffective for approximating the dynamics of conservative systems. In this talk we will discuss how to address inverse problems for transport and wave phenomena in the framework of Hamiltonian systems. The method combines symplectic dynamical low-rank approximation to update $V$ with dynamical placement of the sensors to ensure an accurate reconstruction at all times.",
+      abstract: "This talk focuses on the inverse problem of reconstructing an unknown function $u$ from a finite set of measurements, under the assumption that $u$ is the output of a parametric differential equation with unknown input parameters. Typically, the target function $u$ belongs to an infinite-dimensional Hilbert space and the geometry of the solution set $M$ is not known a priori. One way to reduce the complexity of the problem is to approximate $M$ by a linear, finite dimensional subspace $V$ using model order reduction, and to search for an approximation $u^{\\star}\\in V$ to the state $u$. It is however known that such an approach becomes ineffective for approximating the dynamics of conservative systems. In this talk we will discuss how to address inverse problems for transport and wave phenomena in the framework of Hamiltonian systems. The method combines symplectic dynamical low-rank approximation to update $V$ with dynamical placement of the sensors to ensure an accurate reconstruction at all times.",
     },
     {
       name: "Francesco Regazzoni",
@@ -156,7 +162,12 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
 
               <div className="abstract">
                 <h4>Abstract</h4>
-                <p>{s.abstract}</p>
+                <ReactMarkdown
+                  remarkPlugins={[remarkMath]}
+                  rehypePlugins={[rehypeKatex]}
+                >
+                  {s.abstract}
+                </ReactMarkdown>
               </div>
             </div>
           ))}
