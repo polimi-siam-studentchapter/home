@@ -25,6 +25,14 @@ const Footer: React.FC<FooterProps> = ({ mode }) => {
       <p style={{ margin: 0, fontSize: "0.9em", color: "#fff"}}>
         © 2026 SIAM Chapters Meeting @ PoliMI
       </p>
+      <a
+        href="./downloadables/privacy_policy.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ paddingTop: "1rem", display: "block", fontSize: "smaller" }}
+      >
+        Privacy Policy
+      </a>
     </footer>
   );
 };
