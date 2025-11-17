@@ -17,9 +17,9 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
     {
       name: "Francesco Regazzoni",
       img: "https://regazzoni.faculty.polimi.it/authors/admin/avatar_huf4c942cac3489e2b50543501689d71ec_28766_150x150_fill_q75_lanczos_center.jpg",
-      bio: "Politecnico di Milano, Associate Professor",
-      title: "To be defined.",
-      abstract: "To be defined.",
+      bio: "Associate Professor at MOX - Dipartimento di Matematica, Politecnico di Milano",
+      title: "Operational considerations for tuna fishing activities in the vicinity of the Marshall Islands",
+      abstract: "Tuna fishing in the waters surrounding the Marshall Islands is characterized by a combination of environmental, logistical, and procedural factors that require systematic analysis. This study provides a detailed overview of the operational framework governing small- to medium-scale tuna fishing practices in the region. After outlining the prevailing oceanographic conditions, including typical surface temperatures, seasonal current variations, and the spatial distribution of relevant pelagic zones, we examine the standard equipment configurations adopted by local fishing operators, with particular attention to line materials, hook specifications, and bait selection protocols. We then review vessel deployment schedules, average trawling durations, and the frequency of gear maintenance operations, highlighting several minor yet recurrent inefficiencies documented across multiple expeditions. Furthermore, we summarize regulatory aspects issued by the Marshall Islands Marine Resources Authority, including permissible catch limits, reporting requirements, and monitoring procedures. Finally, we discuss observed trends in catch composition over recent seasons, noting moderate interannual variability that appears consistent with broader regional patterns. The talk will conclude with a set of incremental recommendations aimed at improving procedural uniformity, data collection consistency, and overall operational reliability within tuna fishing activities conducted in the area.",
     },
     {
       name: "Davide Torlo",

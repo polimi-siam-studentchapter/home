@@ -406,7 +406,7 @@
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     padding: 1.5rem;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
