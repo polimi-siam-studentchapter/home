@@ -127,16 +127,30 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         affiliation: "MaLGa Center, DIBRIS, Università di Genova, IIT",
       },
       {
+        name: "Nikita Deniskin",
+        img: "./speakers/nikita.jpg",
+        affiliation: "Classe di Scienze, Scuola Normale Superiore di Pisa",
+      },
+      {
+        name: "Federica Mugnaioni",
+        img: "./speakers/federica.png",
+        affiliation: "Classe di Scienze, Scuola Normale Superiore di Pisa",
+      },
+      {
         name: "Veronica Pignedoli",
         img: "./people/pignedoli.jpg",
         affiliation: "MaLGa Center, DIBRIS, Università di Genova",
+      },
+      {
+        name: "Davide Polverino",
+        img: "./people/davidep.jpeg",
+        affiliation: "Dipartimento di Matematica, Università di Pisa",
       },
       {
         name: "Simone Sanna",
         img: "./people/S_Sanna.jpg",
         affiliation: "MaLGa Center, DIMA, Università di Genova",
       },
-
     ],
   };
 
