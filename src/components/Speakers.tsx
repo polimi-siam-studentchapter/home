@@ -16,21 +16,21 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
     {
       name: "Luca Calatroni",
       img: "./speakers/calatroni.jpeg",
-      bio: "MaLGa centre, Department of Computer Science, Università degli studi di Genova, Italy, Associate professor",
+      bio: "Associate professor - MaLGa centre, Department of Computer Science, Università degli studi di Genova",
       title: "Optimisation-driven deep learning for image reconstruction",
       abstract: "Recent advances in machine learning and deep learning have revolutionised the study of applied inverse problems and computer vision. Although these data-driven methods often outperform classical reconstruction techniques grounded in tailored modelling and expert knowledge, they frequently lack rigorous mathematical guarantees. In this talk, I will discuss how hybrid approaches that integrate physical models with learned regularisation can bridge this gap, offering a balanced combination of interpretability, reliability, and performance. I will focus in particular on convergent hybrid methods formulated as extensions of classical optimisation schemes (such as proximal gradient methods and bilevel optimisation approaches), in which the physical forward model is enforced explicitly while the prior is learned from data. As an application, I will demonstrate how these techniques can be effectively employed for image reconstruction in fluorescence microscopy, particularly in regimes with limited photon counts.",
     },
     {
       name: "Monica Montardini",
-      img: "",
-      bio: "",
-      title: "To be defined.",
-      abstract: "To be defined.",
+      img: "./speakers/montardini.jpg",
+      bio: "RTT - Università degli studi di Pavia",
+      title: "Low-rank methods in Isogeometric Analysis",
+      abstract: "The numerical solution of Partial Differential Equations with standard approaches suffers from the so-called curse of dimensionality: the memory storage and the computational effort grow exponentially with respect to the dimension  d of the problem.  On a single-patch domain, this is typically O(n^d), where n is the number of degrees of freedom in each univariate direction. As a remedy, in this talk we combine Isogeometric Analysis with low-rank techniques, allowing  an overall computational cost and memory footprint that is proportional to n. First, we approximate the equation's coefficients, including those stemming from the geometry mapping, with a sum of few separable functions. We then consider an iterative Krylov solver with tensor rank truncations combined with a novel preconditioning strategy, that is robust with respect to the relevant parameters. The preconditioner is based on the Fast Diagonalization method, that is recast to be compatible to the chosen tensor format. This low-rank technique and the preconditioning strategy can be extended to multipatch geometries, using an overlapping Schwarz method where the subdomains can be defined as unions of neighbouring patches.",
     },
     {
       name: "Cecilia Pagliantini",
       img: "./speakers/CeciliaPagliantini.png",
-      bio: "RTDb Dipartimento di Matematica, Università di Pisa",
+      bio: "RTDb - Dipartimento di Matematica, Università di Pisa",
       title: "Dynamical approximation and sensor placement for the state estimation of conservative dynamics",
       abstract: "This talk focuses on the inverse problem of reconstructing an unknown function $u$ from a finite set of measurements, under the assumption that $u$ is the output of a parametric differential equation with unknown input parameters. Typically, the target function $u$ belongs to an infinite-dimensional Hilbert space and the geometry of the solution set $M$ is not known a priori. One way to reduce the complexity of the problem is to approximate $M$ by a linear, finite dimensional subspace $V$ using model order reduction, and to search for an approximation $u^{\\star}\\in V$ to the state $u$. It is however known that such an approach becomes ineffective for approximating the dynamics of conservative systems. In this talk we will discuss how to address inverse problems for transport and wave phenomena in the framework of Hamiltonian systems. The method combines symplectic dynamical low-rank approximation to update $V$ with dynamical placement of the sensors to ensure an accurate reconstruction at all times.",
     },
@@ -44,7 +44,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
     {
       name: "Davide Torlo",
       img: "./speakers/Torlo_SISSA_keynote.jpg",
-      bio: "Sapienza Università di Roma, RTT",
+      bio: "RTT - Sapienza Università di Roma",
       title: "How to Preserve Moving Equilibria for Hyperbolic Balance Laws with the Global Flux Quadrature",
       abstract: "Many conservation and balance laws admit families of moving steady states that are crucial to preserve at the numerical level. While several techniques have been developed to achieve this in one dimension, few are available for multidimensional problems, and those often apply only to linear cases. The so-called Global Flux approach integrates multiple terms into a single physical flux, yielding a unified differential operator acting on a more complex flux function. This formulation enables highly accurate discrete equilibria that correspond to exact continuous steady states. In finite element methods, these discrete equilibria exhibit superconvergence properties, allowing for very precise perturbation analyses. Despite its name, the Global Flux method leads to compact numerical stencils and can be reformulated as specific discrete derivative and source terms. We apply the method to various systems — including the acoustic, shallow water, Euler, and Maxwell equations, with and without source terms — demonstrating its ability to preserve a broad class of genuinely multidimensional equilibria.",
     },
@@ -128,12 +128,17 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
       },
       {
         name: "Nikita Deniskin",
-        img: "./speakers/nikita.jpg",
+        img: "./people/nikita.jpg",
         affiliation: "Classe di Scienze, Scuola Normale Superiore di Pisa",
       },
       {
+        name: "Giulia Formenton",
+        img: "./people/Giulia_Formenton.jpg",
+        affiliation: "Dipartimento di Ingegneria Civile e Architettura, Università di Pavia",
+      },
+      {
         name: "Federica Mugnaioni",
-        img: "./speakers/federica.png",
+        img: "./people/federica.png",
         affiliation: "Classe di Scienze, Scuola Normale Superiore di Pisa",
       },
       {
@@ -150,6 +155,16 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         name: "Simone Sanna",
         img: "./people/S_Sanna.jpg",
         affiliation: "MaLGa Center, DIMA, Università di Genova",
+      },
+      {
+        name: "Davide Terazzi",
+        img: "./people/Davide_Terazzi.jpeg",
+        affiliation: "Dipartimento di Matematica, Università di Pavia",
+      },
+      {
+        name: "Sofia Tonali",
+        img: "./people/Sofia_Tonali.jpeg",
+        affiliation: "Dipartimento di Matematica, Università di Pavia",
       },
     ],
   };
