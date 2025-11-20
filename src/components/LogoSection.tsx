@@ -10,8 +10,15 @@ interface LogoSectionProps {
 const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
   return (
     <div className="logo-section">
+
       <h2>Institutions involved</h2>
-      <p>Sponsors and institutions involved.</p>
+      <p>Under the auspicies of:</p>
+      <div className="patrocinio">
+        <a href="https://www.simai.eu/"><img src="./logos/simai.png" alt="SIMAI"/></a>
+      </div>
+      <p>
+        The event features the participation of various academic and research institutions that contribute to its scientific identity and community engagement:
+      </p>
 
       <section>
         <LogoLoop
@@ -21,11 +28,6 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
               src: "./logos/logo_mathLab_bg_v.png",
               alt: "mathLab",
               href: "https://mathlab.sissa.it/"
-            },
-            {
-              src: "./logos/logo_polimi.png",
-              alt: "Politecnico di Milano",
-              href: "https://www.polimi.it/"
             },
             {
               src: "./logos/logo-8192px.png",
@@ -64,6 +66,17 @@ const LogoSection: React.FC<LogoSectionProps> = ({ mode }) => {
           ariaLabel="Partner logos"
         />
       </section>
+
+      <p>Contributors:</p>
+      <div className="patrocinio">
+        <a href="https://www.polimi.it/"><img src="./logos/logo_polimi.png" alt="Politecnico di Milano"/></a>
+      </div>
+      <div className="patrocinio">
+        <a href="https://www.siam.org/"><img src="./logos/SIAM.png" alt="SIAM"/></a>
+      </div>
+      <div className="patrocinio">
+        <a href="https://www.altamatematica.it/gncs/"><img src="./logos/logo-indam-gncs.webp" alt="INDAM-GNCS"/></a>
+      </div>
     </div>
   );
 };
