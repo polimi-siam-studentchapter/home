@@ -14,8 +14,18 @@ const steps = [
     description:
     (
       <>
-        Contributed talks and posters are welcome, use the{" "}
-        <a href="https://forms.gle/uD3a9h3PVXUrXu5K8">form here</a> to submit your abstract.
+        Contributed talks are welcome, use the{" "}
+        <a href="https://forms.gle/uD3a9h3PVXUrXu5K8">form here</a> to submit your abstract. Notification of acceptance will be given on December 22, 2025.
+      </>
+    ), 
+  },
+  {
+    label: "Poster submission form - January 15, 2025",
+    description:
+    (
+      <>
+        Contributed posters are welcome, use the{" "}
+        <a href="https://forms.gle/uD3a9h3PVXUrXu5K8">form here</a> to submit your poster.
       </>
     ), 
   },
