@@ -38,7 +38,8 @@ function Main({ mode }: MainProps) {
   // -------------------- Timeline Data --------------------
   const timelineData = [
     { date: "December 15, 2025", event: "Abstract submission deadline", icon: <TaskIcon /> },
-    { date: "January 16, 2026", event: "Registration deadline", icon: <HowToRegIcon /> },
+    { date: "January 15, 2026", event: "Poster submission deadline", icon: <TaskIcon /> },
+    { date: "January 15, 2026", event: "Registration deadline", icon: <HowToRegIcon /> },
     { date: "January 29, 2025", event: "Conference begins", icon: <ChecklistIcon /> },
   ];
 

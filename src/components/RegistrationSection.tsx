@@ -20,7 +20,7 @@ const steps = [
     ), 
   },
   {
-    label: "Poster submission form - January 15, 2025",
+    label: "Poster submission form - January 15, 2026",
     description:
     (
       <>

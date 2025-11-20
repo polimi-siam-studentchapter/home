@@ -54,7 +54,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
     "Organising Committee": [
       {
         name: "Davide Carrara",
-        img: "./people/davide.jpeg",
+        img: "./people/davide.jpg",
         affiliation: "MOX, DMAT, Politecnico di Milano",
       },
       {
@@ -90,7 +90,7 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         affiliation: "MOX, DMAT, Politecnico di Milano",
       },
       {
-        name: "Simone Panzieri",
+        name: "Simone Panzeri",
         img: "https://www.mate.polimi.it/servizi/webspace/img/100008_40.jpg",
         affiliation: "MOX, DMAT, Politecnico di Milano",
       },
