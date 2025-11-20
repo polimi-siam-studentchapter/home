@@ -40,7 +40,7 @@ function Main({ mode }: MainProps) {
     { date: "December 15, 2025", event: "Abstract submission deadline", icon: <TaskIcon /> },
     { date: "January 15, 2026", event: "Poster submission deadline", icon: <TaskIcon /> },
     { date: "January 15, 2026", event: "Registration deadline", icon: <HowToRegIcon /> },
-    { date: "January 29, 2025", event: "Conference begins", icon: <ChecklistIcon /> },
+    { date: "January 29, 2026", event: "Conference begins", icon: <ChecklistIcon /> },
   ];
 
   // -------------------- Map State --------------------
@@ -66,7 +66,7 @@ function Main({ mode }: MainProps) {
     "Mathematical Modeling",
     "Numerical Analysis",
     "Data Integration",
-    "Finite Element Method",
+    "Finite Element Methods",
     "Discontinuous Galerkin Methods",
     "Mathematics for Sustainable Development",
     "Mathematical Foundations of Deep Learning",
@@ -116,9 +116,9 @@ function Main({ mode }: MainProps) {
         <p>
           The program will include <strong>keynote lectures</strong> by senior researchers, <strong>invited and contributed talks</strong> by young scientists (PhD students and PostDocs), and a <strong>poster session</strong>. This year, the poster session will be complemented by an <strong>elevator pitch format</strong>, where each presenter will give a <strong>three-minute flash talk</strong> to introduce their work and encourage engagement and discussion.
         </p>
-        <p>
+        {/* <p>
           Scientific topics will include, but are not limited to: <strong>Numerical Linear Algebra, Mathematical Modelling, Large-Scale Problems, Finite Element and Finite Volume Methods, Statistical Learning, Scientific Machine Learning, High-Performance Computing, Mathematics for Sustainable Development</strong>, and <strong>Computational Medicine</strong>.
-        </p>
+        </p> */}
         <p>
           The meeting is jointly organised by the Italian SIAM Chapters at <strong>Politecnico di Milano (PoliMi), Scuola Internazionale Superiore degli Studi (SISSA), Università di Genova (UniGe), Università di Pavia - IMATI (UniPV-IMATI)</strong>, and <strong>Università di Pisa - Scuola Normale Superiore (UniPi-SNS)</strong>. Submissions and participation are warmly encouraged from researchers across <strong>all Italian universities and research centres</strong>.
         </p>
