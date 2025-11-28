@@ -246,7 +246,7 @@
 
 // -------------------- Logo Section --------------------
 .logo-section {
-  padding: 4em $margin-right-body 4em $margin-left-body;
+  padding: 4em $margin-right-body 1em $margin-left-body;
   width: $body-width;
   background-color: $background-light-color;
   align-items: left;
@@ -265,6 +265,9 @@
       padding: 1em 0 1em 0
     }
   }
+}
+.logo-loop {
+  background-color: $background-light-color;
 }
 
 // ------------------ Schedule Section -------------------

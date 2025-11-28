@@ -137,9 +137,19 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         affiliation: "Dipartimento di Ingegneria Civile e Architettura, Università di Pavia",
       },
       {
+        name: "Isabella Carla Gonnella",
+        img: "./people/IsabellaCarlaGonnella.jpg",
+        affiliation: "mathLab, SISSA",
+      },
+      {
         name: "Federica Mugnaioni",
         img: "./people/federica.png",
         affiliation: "Classe di Scienze, Scuola Normale Superiore di Pisa",
+      },
+      {
+        name: "Guglielmo Padula",
+        img: "./people/GuglielmoPadula.jpg",
+        affiliation: "mathLab, SISSA",
       },
       {
         name: "Veronica Pignedoli",
@@ -160,6 +170,11 @@ const Speakers: React.FC<ScheduleProps> = ({ mode }) => {
         name: "Davide Terazzi",
         img: "./people/Davide_Terazzi.jpeg",
         affiliation: "Dipartimento di Matematica, Università di Pavia",
+      },
+      {
+        name: "Lorenzo Tomada",
+        img: "./people/LorenzoTomada.jpg",
+        affiliation: "mathLab, SISSA",
       },
       {
         name: "Sofia Tonali",
